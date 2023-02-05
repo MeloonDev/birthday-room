@@ -8,7 +8,7 @@ const Sound = () => {
 
   return (
     <>
-      <ReactHowler src="./happy-birthday.mp3" playing={isMuted} />
+      <ReactHowler src="./happy-birthday.mp3" playing={isMuted} loop={true} />
       <button onClick={() => setIsMuted(!isMuted)} className="btn">
         {isMuted ? <BsVolumeUpFill /> : <BsVolumeMuteFill />}
       </button>
