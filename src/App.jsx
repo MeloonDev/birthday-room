@@ -35,7 +35,7 @@ export default function App() {
             font="./bangers-v20-latin-regular.woff"
             fontSize={1.5}
             position={[0.5, 7, -3.4]}
-            rotation-y={0.1}
+            rotation-y={0}
             color={["#D9D6CE"]}
           >
             NAJLEPSZEGO!
