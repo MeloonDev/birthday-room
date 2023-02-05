@@ -1,4 +1,4 @@
-import { Stage, PresentationControls } from "@react-three/drei";
+import { Text, Stage, PresentationControls } from "@react-three/drei";
 import { useControls } from "leva";
 import { Perf } from "r3f-perf";
 import Pop from "./Pop";
@@ -15,7 +15,7 @@ export default function App() {
 
       <Stage
         intensity={0.5}
-        environment="city"
+        environment="lobby"
         shadows={{
           normalBias: 0.09,
         }}
@@ -29,6 +29,23 @@ export default function App() {
         >
           <Room />
           <Pop rotation-y={44.8} position={[2.5, 0.54, 2.5]} scale={0.6} />
+          <Text
+            font="./bangers-v20-latin-regular.woff"
+            fontSize={1.5}
+            position={[-3.2, 7, 0.8]}
+            rotation-y={1.5}
+          >
+            WSZYTKIEGO
+          </Text>
+          <Text
+            font="./bangers-v20-latin-regular.woff"
+            fontSize={1.5}
+            position={[0.5, 7, -3.4]}
+            rotation-y={0.1}
+            color={["#D9D6CE"]}
+          >
+            NAJLEPSZEGO!
+          </Text>
         </PresentationControls>
       </Stage>
     </>
