@@ -1,21 +1,15 @@
 import { Text, Stage, PresentationControls } from "@react-three/drei";
-import { useControls } from "leva";
-import { Perf } from "r3f-perf";
 import Pop from "./Pop";
 import Room from "./Room";
 
 export default function App() {
-  const { color } = useControls({ color: "#333" });
-
   return (
     <>
-      <Perf position="top-left" />
-
-      <color attach="background" args={[color]} />
+      <color attach="background" args={["#14283E"]} />
 
       <Stage
-        intensity={0.5}
-        environment="lobby"
+        intensity={0.4}
+        environment="city"
         shadows={{
           normalBias: 0.09,
         }}
@@ -35,7 +29,7 @@ export default function App() {
             position={[-3.2, 7, 0.8]}
             rotation-y={1.5}
           >
-            WSZYTKIEGO
+            WSZYSTKIEGO
           </Text>
           <Text
             font="./bangers-v20-latin-regular.woff"

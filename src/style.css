@@ -12,3 +12,16 @@ body,
 canvas {
   touch-action: none;
 }
+
+.btn {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 1;
+  background: none;
+  border: none;
+  color: #d9d6ce;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
